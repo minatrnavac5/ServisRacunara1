@@ -1,0 +1,179 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8f5;
+  color: #222;
+}
+
+div:first-of-type {
+  background-color: #328E6E;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+div:first-of-type h1,
+div:first-of-type h2 {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+div:first-of-type a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+div:first-of-type a:hover {
+  text-decoration: underline;
+}
+
+div:nth-of-type(2),
+div:nth-of-type(3),
+div:nth-of-type(4) {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+ul li {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-left: 6px solid #328E6E;
+  border-radius: 10px;
+  padding: 15px;
+  width: 300px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+ul li:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 12px rgba(50, 142, 110, 0.2);
+}
+
+ul img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+a h3 {
+  text-align: center;
+  color: #328E6E;
+  text-decoration: underline;
+}
+
+a h3:hover {
+  color: #67AE6E;
+}
+
+video,
+audio {
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 90%;
+  box-shadow: 0 0 10px rgba(50, 142, 110, 0.2);
+}
+
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(50, 142, 110, 0.2);
+}
+
+form h4 {
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+input[type="submit"] {
+  background-color: #328E6E;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #67AE6E;
+}
+
+/* Tabela - O nama */
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(50, 142, 110, 0.1);
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #328E6E;
+  color: white;
+}
+
+td {
+  background-color: #f9fdfc;
+}
+
+@media (max-width: 768px) {
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul li {
+    width: 90%;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  table {
+    font-size: 0.9em;
+  }
+}
